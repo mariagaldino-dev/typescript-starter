@@ -10,7 +10,7 @@ export class CreateTodoDto {
     createdAt: Date;
     updatedAt: Date;
 }
-enum TodoPriority{
+enum TodoPriority {
     LOW = 'LOW',
     MEDIUM = 'MEDIUM',
     HIGH = 'HIGH',
