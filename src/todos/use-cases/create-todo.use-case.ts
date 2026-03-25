@@ -8,7 +8,7 @@ export class CreateTodoUseCase {
         private readonly createTodoRepositorio: CreateTodoRepository,
         private readonly logger: Logger,
     ) { }
-
+ 
     async execute(data: CreateTodoDto) {
         try {
             this.logger.log('Creating toDo...');
