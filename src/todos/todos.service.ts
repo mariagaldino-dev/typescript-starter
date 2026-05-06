@@ -1,9 +1,16 @@
 import { Injectable } from '@nestjs/common';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
+import { CreateTodoRepository, DeleteTodoRepository,} from 'src/repositorio';
 
 @Injectable()
 export class TodosService {
+  constructor(
+    private readonly createTodoRepository: CreateTodoRepository,
+    private readonly updateTodoRepository: CreateTodoRepository,
+    private readonly deleteTodoRepository: DeleteTodoRepository,
+  ) {}
+
   create(createTodoDto: CreateTodoDto) {
     return 'This action adds a new todo';
   }
