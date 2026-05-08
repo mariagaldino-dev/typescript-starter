@@ -1,5 +1,5 @@
 import { Injectable, Logger } from "@nestjs/common";
-import { CreateTodoRepository } from "src/repositorio";
+import { CreateTodoRepository } from "src/todos/repositorio";
 import { CreateTodoDto } from "../dto/create-todo.dto";
 
 @Injectable()

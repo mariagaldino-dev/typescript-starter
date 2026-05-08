@@ -1,5 +1,5 @@
 import { Injectable, Logger } from "@nestjs/common";
-import { FindTodoByRepository } from "src/repositorio";
+import { FindTodoByRepository } from "src/todos/repositorio";
 
 @Injectable()
 export class FindTodoByIdUseCase {
