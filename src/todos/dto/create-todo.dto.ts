@@ -2,7 +2,7 @@
 export class CreateTodoDto {
     title: string;
     description: string;
-    completed: Boolean;
+    completed: boolean;
     priority: TodoPriority;
     dueAt: Date;
     completedAt: Date;

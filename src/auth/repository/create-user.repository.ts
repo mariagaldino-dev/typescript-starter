@@ -4,7 +4,7 @@ import { PrismaService } from "prisma.databases";
 type CreateUserParams = {
     name?: string;
     email: string;
-    passawordHash: string;
+    passaworcHash: string;
 }
 
 @Injectable()
